@@ -1,0 +1,23 @@
+.Footer {
+    height: 100px;
+}
+
+.Footer__text {
+    color: #A0A0A0;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #E8E8E8;
+}
+
+.Footer__links-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.Footer__links {
+    display: flex;
+}
+
+.Footer__links > div{
+    margin-left: 10px;
+}
