@@ -44,14 +44,14 @@ export default function Yamap() {
           options={getRectOptions()}
         />
 
-        <Rectangle
-          instanceRef={rectangleObjectReceived}
-          geometry={getGeometry(
-            [55.76, 37.7],
-            [55.81, 37.79],
-          )}
-          options={getRectOptions()}
-        />
+        {/* <Rectangle */}
+        {/*  instanceRef={rectangleObjectReceived} */}
+        {/*  geometry={getGeometry( */}
+        {/*    [55.76, 37.7], */}
+        {/*    [55.81, 37.79], */}
+        {/*  )} */}
+        {/*  options={getRectOptions()} */}
+        {/* /> */}
       </Map>
     </YMaps>
   );
