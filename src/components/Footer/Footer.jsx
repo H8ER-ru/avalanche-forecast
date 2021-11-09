@@ -11,7 +11,7 @@ export default function Footer() {
         <div>© 2021</div>
         <div className="Footer__links">
           <div>СПБГУТ</div>
-          <div>Github</div>
+          <a href="https://github.com/H8ER-ru/avalanche-forecast" target="_blank" rel="noreferrer">Github</a>
           <div>Facebook</div>
         </div>
       </div>
