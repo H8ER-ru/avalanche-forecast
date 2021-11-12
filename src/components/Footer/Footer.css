@@ -21,3 +21,9 @@
 .Footer__links > div{
     margin-left: 10px;
 }
+
+.Footer__link {
+    color: inherit;
+    text-decoration: none;
+    margin-left: 10px;
+}

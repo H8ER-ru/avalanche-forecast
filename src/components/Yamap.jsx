@@ -8,6 +8,10 @@ export default function Yamap() {
       // handle click
     });
   }
+  // const serverData = useEffect(async () => {
+  //   const data = await fetch('http://176.99.135.123:3000/objEndData');
+  //   console.log(data);
+  // }, []);
 
   function getRectOptions() {
     return {
@@ -31,15 +35,15 @@ export default function Yamap() {
   return (
     <YMaps>
       <Map
-        defaultState={{ center: [55.75, 37.57], zoom: 9, type: 'yandex#satellite' }}
+        defaultState={{ center: [43.40, 40.12], zoom: 9, type: 'yandex#satellite' }}
         width="100%"
         height="100%"
       >
         <Rectangle
           instanceRef={rectangleObjectReceived}
           geometry={getGeometry(
-            [55.66, 37.6],
-            [55.71, 37.69],
+            [43.40, 40.12],
+            [43.50, 40.22],
           )}
           options={getRectOptions()}
         />

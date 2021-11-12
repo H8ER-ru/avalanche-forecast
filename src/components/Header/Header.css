@@ -4,4 +4,10 @@
     background-color: #CF4B56;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+.Header__button {
+    background: none;
+    border: 0;
+    cursor: pointer;
 }

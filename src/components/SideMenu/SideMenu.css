@@ -1,0 +1,45 @@
+.Side-menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 0;
+    overflow: hidden;
+    z-index: 5;
+    background: white;
+}
+.Side-menu--active {
+    width: 682px;
+    padding: 25px;
+}
+.Side-menu__title {
+    text-align: center;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+}
+.Side-menu__close {
+    position: absolute;
+    left: 25px;
+    top: 25px;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+.Side-menu__places {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 250px auto 0 auto;
+}
+.Side-menu__btn {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    height: 82px;
+    margin-bottom: 4px;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
