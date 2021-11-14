@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Map, Rectangle, YMaps } from 'react-yandex-maps';
 
 export default function Yamap() {
@@ -8,10 +8,17 @@ export default function Yamap() {
       // handle click
     });
   }
-  // const serverData = useEffect(async () => {
-  //   const data = await fetch('http://176.99.135.123:3000/objEndData');
-  //   console.log(data);
-  // }, []);
+
+  const [serverData, setSeverData] = useState({});
+
+  useEffect(() => {
+    fetch('http://176.99.135.123:3000/objEndData')
+      .then((resp) => resp.json())
+      .then((resBody) => {
+        setSeverData(resBody);
+        console.log(resBody);
+      });
+  }, []);
 
   function getRectOptions() {
     return {
@@ -34,6 +41,13 @@ export default function Yamap() {
 
   return (
     <YMaps>
+      {serverData ? (
+        <p>
+          {serverData.data && serverData.data.temperature}
+          {' '}
+          ℃
+        </p>
+      ) : ''}
       <Map
         defaultState={{ center: [43.40, 40.12], zoom: 9, type: 'yandex#satellite' }}
         width="100%"
