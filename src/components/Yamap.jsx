@@ -17,6 +17,8 @@ export default function Yamap() {
       .then((resBody) => {
         setSeverData(resBody);
         console.log(resBody);
+      }).catch((e) => {
+        console.log(e);
       });
   }, []);
 
@@ -33,7 +35,7 @@ export default function Yamap() {
      * @param {array} corner1 - topLeft corner
      * @param {array} corner2 - rightBottom corner
      * @returns array
-     */
+  */
 
   function getGeometry(corner1, corner2) {
     return [corner1, corner2];
