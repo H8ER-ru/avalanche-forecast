@@ -12,12 +12,28 @@
     width: 682px;
     padding: 25px;
 }
+
+@media (max-width: 800px) {
+    .Side-menu--active {
+        width: 100%;
+    }
+}
+
 .Side-menu__title {
     text-align: center;
     font-weight: 500;
     font-size: 40px;
     line-height: 47px;
 }
+
+@media (max-width: 800px) {
+    .Side-menu__title {
+        margin-top: 50px;
+        font-size: 26px;
+        line-height: 30px;
+    }
+}
+
 .Side-menu__close {
     position: absolute;
     left: 25px;
@@ -26,6 +42,15 @@
     background: transparent;
     cursor: pointer;
 }
+
+@media (max-width: 800px) {
+    .Side-menu__close {
+        left: auto;
+        right: 20px;
+        top: 15px;
+    }
+}
+
 .Side-menu__places {
     display: flex;
     align-items: center;
@@ -42,4 +67,11 @@
     border: 0;
     background: transparent;
     cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    .Side-menu__btn {
+        font-size: 26px;
+        line-height: 30px;
+    }
 }

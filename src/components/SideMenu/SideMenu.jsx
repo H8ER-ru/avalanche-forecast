@@ -6,6 +6,7 @@ export default function SideMenu() {
   function closeButtonHandler() {
     document.querySelector('.Side-menu').classList.remove('Side-menu--active');
   }
+
   return (
     <aside className="Side-menu">
       <button
@@ -22,8 +23,18 @@ export default function SideMenu() {
       </button>
       <h1 className="Side-menu__title">Обслуживаемый участок</h1>
       <div className="Side-menu__places">
-        <button className="Side-menu__btn" type="button">Хибины</button>
-        <button className="Side-menu__btn" type="button">Красная поляна</button>
+        <button
+          className="Side-menu__btn"
+          type="button"
+        >
+          Хибины
+        </button>
+        <button
+          className="Side-menu__btn"
+          type="button"
+        >
+          Красная поляна
+        </button>
       </div>
     </aside>
   );
